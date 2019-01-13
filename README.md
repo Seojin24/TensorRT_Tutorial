@@ -5,6 +5,13 @@
  - 2017-10-18 增加博客-使用TensorRT实现leaky relu层
  - 2017-11-11 资源：新增google的INT8开源库
  - 2017-11-25 增加博客-TensorRT Plugin使用方式简介-以leaky relu层为例
+ 
+## Progress Record
+ - 2017-04-27 The project was launched to create a GitHub repository.
+ - 2017-09-30 TensorRT 3 was recently released to tidy up the current resources.
+ - 2017-10-18 Add Blog - Implement the leaky relu layer with TensorRT
+ - 2017-11-11 Resources: Add google's INT8 open source library
+ - 2017-11-25 Add blog - Introduction to the use of TensorRT Plugin - Take the leaky relu layer as an example
 
 ----
 ## 资源整理
@@ -18,10 +25,30 @@
  - “子棐之GPGPU”公众号所写的《TensorRT系列》博客，NVIDIA的工程师出的，从入门篇到INT8篇再到FP16篇最后收尾于Custom Layer篇，内容逻辑清楚，干货满满，自愧不如。附四篇博客链接：[TensorRT 系列之入门篇][10]，[TensorRT系列之INT8篇][11]，[TensorRT系列之FP16篇][12]，[TensorRT系列之Custom Layer篇][13]。
  - [《高性能深度学习支持引擎实战——TensorRT》][14]，主要内容：一、TensorRT理论介绍：基础介绍TensorRT是什么；做了哪些优化；为什么在有了框架的基础上还需要TensorRT的优化引擎。二、TensorRT高阶介绍：对于进阶的用户，出现TensorRT不支持的网络层该如何处理；
 
+
+----
+## Resource organization
+ - [TensorRT 3 RC][1] and [TensorRT 2.1][2] Download link
+ - [TensorRT 2.1 official online documentation][3]
+ - NVIDIA introduces TensorRT's blog-[Deploying Deep Neural Networks with NVIDIA TensorRT][4]
+ - GTC 2017 introduces TensorRT's [PPT][5] and [Video][6], including the implementation principles of INT8 Quantization and Calibration.
+ - Added cublas and cudnn to INT8 [demo][7]
+ - Added my PPT for GTC China 2017 Community Corner theme NVIDIA INT8, [GTC-China-2017-NVIDIA-INT8.pdf][8]
+ - Added google's INT8 open source library [gemmlowp][9], currently supports ARM and CPU optimization
+ - "TensorRT Series" blog written by the "Phito GPGPU" public number, NVIDIA engineers, from the entry article to the INT8 article to the FP16 article finalized in the Custom Layer article, the content logic is clear, the dry goods are full, from It is not as good as it is. Attached to four blog links: [TensorRT series entry] [10], [TensorRT series INT8] [11], [TensorRT series FP16] [12], [TensorRT series Custom Layer][13] .
+ - ["High-performance deep learning support engine combat - TensorRT"] [14], main content: First, TensorRT theory introduction: Basic introduction TensorRT is what; what optimization is done; why need TensorRT on the basis of the framework Optimization engine. Second, TensorRT high-level introduction: For advanced users, how to deal with the network layer that TensorRT does not support;
 ---
 ## 博客
  - [使用TensorRT实现leaky relu层][15]
  - [TensorRT Plugin使用方式简介-以leaky relu层为例][16]
+ 
+## Blog 
+ - [Implementing a leaky relu layer using TensorRT][15]
+ - [Introduction to the use of TensorRT Plugin - Take the leaky relu layer as an example] [16] 
+ 
+ 
+ 
+ -------
 
 # TensorRT_Tutorial
 
@@ -41,7 +68,26 @@ TensorRT作为NVIDIA推出的c++库，能够实现高性能推理（inference）
  https://developer.nvidia.com/nvidia-tensorrt-20-download
  
  TensorRT 文档、Samples
- 安装后对应目录中
+ 安装后对应目录中 
+ 
+ ## TensorRT_tutorial 
+ As a C++ library from NVIDIA, TensorRT enables high-performance inference processes. Recently, NVIDIA released the TensorRT 2.0 Early Access version, a major change is to support the INT8 type. In today's era of DL, INT8 has a great advantage in reducing the size of the model and speeding up the operation. Google's newly released TPU uses an 8-bit data type.
+
+I am currently using TensorRT for INT8 exploration. The document that has been imperfect by TensorRT has been pitted once. So I want to be a TensorRT Tutorial with my own self-reliance. It mainly consists of three parts:
+ - TensorRT User Guide translation;
+ - TensorRT samples introduces analytical explanations;
+ - TensorRT experience.
+
+If you are using TensorRT, please read "[TensorRT's current BUG][17]".
+
+ Thanks to everyone who contributed to the translation project.
+ 
+ Content source:
+ TensorRT download page:
+ Https://developer.nvidia.com/nvidia-tensorrt-20-download
+ 
+ TensorRT documentation, Samples
+ In the corresponding directory after installation
  
 ## 参与者（按参与时间排序）
 TensorRT User Guide 翻译
@@ -60,6 +106,29 @@ TensorRT 使用经验。
 欲参与者请加QQ群：483063470
 
 支持捐赠项目
+
+
+
+
+## Participants (sorted by participation time)
+TensorRT User Guide Translation
+ - [LitLeo][18]
+ - [MoyanZitto][19]
+
+Translation proofreading
+
+ - Zhao Kaiyong
+
+TensorRT samples introduces analysis and explanation
+- [LitLeo][20]
+
+TensorRT experience.
+
+For participants, please add QQ group: 483063470
+
+Support for donation projects
+
+
 
  <img src="https://raw.githubusercontent.com/LitLeo/blog_pics/master/WeChat_collection.png" width = "200px" height = "200"/>
 
